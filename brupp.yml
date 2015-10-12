@@ -10,11 +10,18 @@
       homebrew_cask: name={{item}} state=present
       with_items:
         - firefox
+        - chromium
+        - cord
         - libreoffice
         - tunnelblick
         - gimp
+        - inkscape
         - dropbox
         - skype
+        - grandprespective
+        - vlc
+        - moneymoney
+        - java7
 
   vars:
     - computername: gwaggli
@@ -28,7 +35,7 @@
       - domain: 'NSGlobalDomain'
         key: 'KeyRepeat'
         type: integer
-        value: 2
+        value: 3
       - domain: 'NSGlobalDomain'
         key: 'InitialKeyRepeat'
         type: integer
