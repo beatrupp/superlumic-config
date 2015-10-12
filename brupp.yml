@@ -1,0 +1,34 @@
+---
+
+- hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    - name: install personal cask applications
+      homebrew_cask: name={{item}} state=present
+      with_items:
+        - firefox
+        - libreoffice
+        - tunnelblick
+        - gimp
+        - dropbox
+        - skype
+
+  vars:
+    - computername: gwaggli
+    - git_user_name: Beat Rupp
+    - git_user_email: beatrupp@gmail.com
+    - osx_defaults:
+      - domain: 'com.apple.dock'
+        key: 'autohide'
+        type: boolean
+        value: true
+      - domain: 'NSGlobalDomain'
+        key: 'KeyRepeat'
+        type: integer
+        value: 2
+      - domain: 'NSGlobalDomain'
+        key: 'InitialKeyRepeat'
+        type: integer
+        value: 15
+
