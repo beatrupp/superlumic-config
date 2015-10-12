@@ -23,6 +23,7 @@
         - vlc
         - moneymoney
         - java7
+        - menumeters
 
   vars:
     - computername: gwaggli
