@@ -43,3 +43,6 @@
         type: integer
         value: 15
 
+   dependencies:
+     - roderik.superlumic-vim
+
