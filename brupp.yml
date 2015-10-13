@@ -24,6 +24,7 @@
         - moneymoney
         - java7
         - menumeters
+        - virtualbox
 
   vars:
     - computername: gwaggli
